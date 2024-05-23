@@ -1,0 +1,31 @@
+
+#GET ALL BOOKS
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+###
+
+#CREATE BOOKS
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "The Great Henry"
+}
+
+###
+
+#UPDATE BOOKS
+PUT http://localhost:3001/books/7df9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "THE GREAT KHALI"
+}
+
+###
+
+#DELETE BOOKS
+
+DELETE http://localhost:3001/books/1659 HTTP/1.1
+Content-Type: application/json
